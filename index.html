@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    
+
+      $.get(`/igdg`, function(vid){ 
+                let result = vid
+                lines=`<h1> ${result} </h1>`
+                document.getElementById("myText").innerHTML=lines;
+                loadProducts(result)
+              })
+
+       function loadProducts(result1){
+          $.get(`/return/${result1}`, function(res) { 
+                //console.log(res)
+                lines1=`<h1> Aur aaloo hi rahega : ${res} </h1>`
+                document.getElementById("myText1").innerHTML=lines1;
+                })   
+             } 
+           
+  </script>
+  <p id="myText" ></p>
+  <p id="myText1" ></p>
+</body>
+</html>
+
+
