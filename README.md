@@ -16,3 +16,7 @@ Simple code sample for the connection of node.js and web page and data sending a
  For installing express Setup:
  
   npm install express
+
+After that you can use this code.. and Start the server by typing: npm start or node test.js
+
+open the brower and check the local host: http://localhost:8001/index.html
